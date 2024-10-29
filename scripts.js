@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     addTaskButton.addEventListener("click", () => {
         const title = document.getElementById("taskTitle").value.trim();
-        let description = document.getElementById("taskDescription").value;
+        let description = document.getElementById("taskDescription").value.trim();
         if (description === "") {
-            description = null
+            description = null;
         }
         if (title) {
             console.log(`Tarefa Adicionada!\n\nTarefa: ${title}\nDescrição: ${description}`);
